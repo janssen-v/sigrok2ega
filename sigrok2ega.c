@@ -56,8 +56,7 @@ pset(
   *target_pixel = egapal[color];
 }
 
-int main()
-{
+int WinMain(){
   int new_frame = 0;
   int hsync = 0, vsync = 0;
   int frame = 0;
@@ -124,7 +123,8 @@ int main()
 
   while(!feof(stdin)) {
     unsigned char value, color1;
-    value = getchar_unlocked(); // fgetc(stdin);
+    //value = getchar_unlocked(); // fgetc(stdin);
+    value = fgetc(stdin);
     vsync = value & 128;
     hsync = value & 64;
     if( vsync == 0 ) {
