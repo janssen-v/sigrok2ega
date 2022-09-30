@@ -1,1 +1,1 @@
-Little tool to playback a SIGROK dump of EGA video
+Little tool to playback SIGROK dump of an IS 400 VEGA's display out
